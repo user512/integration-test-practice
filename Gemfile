@@ -40,6 +40,8 @@ end
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.4'
+  gem 'guard-rspec', '~> 4.6', '>= 4.6.4'
+  gem 'spring-commands-rspec', '~> 1.0', '>= 1.0.4'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 end
