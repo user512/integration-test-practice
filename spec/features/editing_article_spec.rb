@@ -31,7 +31,7 @@ RSpec.feature "Editing an Article" do
     click_button "Update Article"
 
     expect(page).to have_content("Article has not been updated")
-    expect(page.current_path).to eq(article_path(@article))
+    expect(current_path).to eq(article_path(@article))
   end
 
 end
