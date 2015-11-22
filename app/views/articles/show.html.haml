@@ -1,0 +1,8 @@
+%article.details-article
+  %h1.article-detail-title= @article.title
+  #article-date.glyphicon.glyphicon-calendar
+    = @article.created_at.strftime("%b %d, %Y")
+  .article-body
+    = @article.body
+  = link_to "Edit Article", edit_article_path(@article), class: "btn btn-primary btn-lg btn-space"
+  = link_to "Delete Article", article_path(@article), method: :delete, data:{ confirm: "Are you sure?"}, class: "btn btn-danger btn-lg btn-space"
